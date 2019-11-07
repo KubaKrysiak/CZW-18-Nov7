@@ -12,14 +12,40 @@
 
 <body>
 	<div class="container" id="app">
-		<div class="module">
+		<div class="module" id="silnia-module">
+			<h3>silnia:</h3>
+		</div>
+	
+	<div class="container" id="app">
+		<div class="module" id="random-module">
 			<div>
 				ojej!
 			</div>
 			<div class="spread">
-				<label for="exampleInputEmail1">Email address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				<label  for="silnia-input">n:</label>
+				<input type="number" class="form-control" id="silnai-input"  placeholder="n">
 			</div>
+			<div class="spread">
+				<label  for="random-min">min:</label>
+				<input type="email" class="form-control" id="random-min"  placeholder="min">
+			</div>
+			<div class="spread">
+				<label  for="random-max">max:</label>
+				<input type="email" class="form-control" id="random-max"  placeholder="max">
+			</div>
+			<div class="spread">
+				<button id="random-generate" type="button" class="btn btn-primary">generate</button>
+				<code id="random-solution">0</code>
+				
+				
+			</div>
+			<div class="spread">
+				<button id="silnia-calcuate" type="button" class="btn btn-primary">calcuate</button>
+				<code id="silnia-solution">0</code>
+				
+				
+			</div>
+		
 		</div>
 	</div>
 	<script src="scripts.js"></script>
