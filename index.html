@@ -1,54 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Conv</title>
+	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <body>
-	<div class="container" id="app">
-		<div class="module" id="silnia-module">
-			<h3>silnia:</h3>
+	<h1>Draw what u wont</h1>
+	<div id="sidebar">
+		<div class="colorButtons">
+			<h3>Colour</h3>
+			<input type="color" id="colorpicker" value="#c81464" class="colorpicker">
 		</div>
-	
-	<div class="container" id="app">
-		<div class="module" id="random-module">
-			<div>
-				ojej!
-			</div>
-			<div class="spread">
-				<label  for="silnia-input">n:</label>
-				<input type="number" class="form-control" id="silnai-input"  placeholder="n">
-			</div>
-			<div class="spread">
-				<label  for="random-min">min:</label>
-				<input type="email" class="form-control" id="random-min"  placeholder="min">
-			</div>
-			<div class="spread">
-				<label  for="random-max">max:</label>
-				<input type="email" class="form-control" id="random-max"  placeholder="max">
-			</div>
-			<div class="spread">
-				<button id="random-generate" type="button" class="btn btn-primary">generate</button>
-				<code id="random-solution">0</code>
-				
-				
-			</div>
-			<div class="spread">
-				<button id="silnia-calcuate" type="button" class="btn btn-primary">calcuate</button>
-				<code id="silnia-solution">0</code>
-				
-				
-			</div>
+		<div class="buttonSize">
+			<h3>Size (<span id="showSize">5</span>)</h3>
+			<input type="range" min="1" max="50" value="5" step="1" id="controlSize">
+		</div>
 		
-		</div>
-	</div>
-	<script src="scripts.js"></script>
-</body>
-
+  </body>
 </html>
